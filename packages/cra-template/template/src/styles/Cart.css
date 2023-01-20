@@ -1,0 +1,9 @@
+.lmj-cart {
+  color: #fff;
+  background-color: #31b572;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+}
