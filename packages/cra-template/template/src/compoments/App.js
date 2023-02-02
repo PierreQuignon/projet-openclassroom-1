@@ -1,19 +1,22 @@
 import Banner from './Banner';
-import logo from '../assets/logo.png';
 import Cart from './Cart';
 import ShoppingList from './ShoppingList';
 import Footer from './Footer';
+import CareScale from './CareScale';
+import '../styles/Container-plants.css';
+import { useState } from 'react';
 
 function App() {
+  const [cart, updateCart] = useState([]);
   return (
     <div>
-      <Banner>
-        <img src={logo} alt="La maison jungle" className="lmj-logo" />
-        <h1 className="lmj-title">La maison jungle</h1>
-      </Banner>
-      <Cart />
-      <ShoppingList />
+      <Banner />
+      <div className="container_plants">
+        <Cart cart={cart} updateCart={updateCart} />
+        <ShoppingList cart={cart} updateCart={updateCart} />
+      </div>
       <Footer />
+      <CareScale />
     </div>
   );
 }

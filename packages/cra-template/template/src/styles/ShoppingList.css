@@ -3,7 +3,7 @@
   padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: center;
 }
 
 .lmj-sales {
@@ -14,4 +14,24 @@
   color: white;
   padding: 5px 10px;
   background-color: #31b572;
+}
+
+.lmj-shopping-list {
+  width: 100%;
+}
+
+.plant-categories {
+  display: flex;
+  justify-content: center;
+}
+
+.btnadd {
+  width: 60px;
+  margin-left: 11px;
+  margin-bottom: 16px;
+}
+
+.btnremove {
+  width: 120px;
+  margin-left: 5px;
 }
